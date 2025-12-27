@@ -95,7 +95,7 @@ export const Navigation: React.FC = () => {
               </a>
             ))}
             <div className="mt-8 pt-8 border-t border-stone-300 w-24 text-center">
-              <span className="font-sans text-[10px] uppercase tracking-widest text-stone-500">24 . 09 . 24</span>
+              <span className="font-sans text-[10px] uppercase tracking-widest text-stone-500">24 . 09 . 25</span>
             </div>
           </motion.div>
         )}
