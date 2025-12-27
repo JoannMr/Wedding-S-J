@@ -34,7 +34,8 @@ export const Story: React.FC = () => {
           </div>
 
           {/* Right Image Composition */}
-          <div className="md:col-span-7 md:col-start-6 relative">
+          <div className="md:col-span-7 md:col-start-6 relative space-y-4">
+             {/* Imagen Basílica - Grande arriba */}
              <motion.div 
                initial={{ opacity: 0, scale: 0.95 }}
                whileInView={{ opacity: 1, scale: 1 }}
@@ -42,31 +43,48 @@ export const Story: React.FC = () => {
                transition={{ duration: 1 }}
                className="relative z-0"
              >
-                {/* Main Image - Editorial Wedding Style */}
                 <img 
-                  src="https://images.unsplash.com/photo-1519225468358-19e21684fa2d?q=80&w=2070&auto=format&fit=crop" 
-                  alt="Silvia y Joan en los jardines" 
-                  className="w-full aspect-[4/5] object-cover grayscale-[10%] sepia-[10%] hover:grayscale-0 transition-all duration-1000 ease-in-out"
+                  src="/images/basilica.avif" 
+                  alt="Basílica de Santa María del Mar" 
+                  className="w-full aspect-[16/10] object-cover grayscale-[10%] sepia-[10%] hover:grayscale-0 transition-all duration-1000 ease-in-out"
                 />
              </motion.div>
 
-             {/* Overlapping Detail Image - Rings */}
-             <motion.div 
-               initial={{ opacity: 0, y: 50 }}
-               whileInView={{ opacity: 1, y: 0 }}
-               viewport={{ once: true }}
-               transition={{ duration: 1, delay: 0.3 }}
-               className="md:absolute md:-bottom-24 md:-left-24 w-64 md:w-80 mt-8 md:mt-0 z-10 border-8 border-[#f5f5f4]"
-             >
-               <img 
-                 src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?q=80&w=2070&auto=format&fit=crop" 
-                 alt="Anillos de boda" 
-                 className="w-full aspect-square object-cover"
-               />
-               <div className="bg-white p-4 text-center shadow-lg">
-                  <span className="font-serif italic text-lg text-stone-600">Por muchos más</span>
-               </div>
-             </motion.div>
+             {/* Grid inferior con anillos y fiesta */}
+             <div className="grid grid-cols-5 gap-4">
+               {/* Imagen Anillos - Más pequeña, izquierda */}
+               <motion.div 
+                 initial={{ opacity: 0, y: 30 }}
+                 whileInView={{ opacity: 1, y: 0 }}
+                 viewport={{ once: true }}
+                 transition={{ duration: 1, delay: 0.2 }}
+                 className="col-span-5 md:col-span-2 relative z-10 border-8 border-[#f5f5f4] bg-white"
+               >
+                 <img 
+                   src="/images/rings.jpg" 
+                   alt="Anillos de boda" 
+                   className="w-full aspect-square object-cover"
+                 />
+                 <div className="bg-white p-4 text-center">
+                    <span className="font-serif italic text-lg text-stone-600">Por muchos más</span>
+                 </div>
+               </motion.div>
+
+               {/* Imagen Fiesta - Más grande, derecha */}
+               <motion.div 
+                 initial={{ opacity: 0, y: 30 }}
+                 whileInView={{ opacity: 1, y: 0 }}
+                 viewport={{ once: true }}
+                 transition={{ duration: 1, delay: 0.3 }}
+                 className="col-span-5 md:col-span-3 relative z-0"
+               >
+                  <img 
+                    src="/images/fiesta.jpg" 
+                    alt="Celebración en los jardines" 
+                    className="w-full aspect-[4/3] object-cover grayscale-[10%] sepia-[10%] hover:grayscale-0 transition-all duration-1000 ease-in-out"
+                  />
+               </motion.div>
+             </div>
           </div>
 
         </div>

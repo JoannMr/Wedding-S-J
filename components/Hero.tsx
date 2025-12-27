@@ -51,7 +51,7 @@ export const Hero: React.FC = () => {
       >
         <div className="hidden md:block">
            <span className="font-sans text-[10px] tracking-[0.2em] uppercase block">Barcelona, ES</span>
-           <span className="font-sans text-[10px] tracking-[0.2em] uppercase block mt-1">Masía Ribas</span>
+           <span className="font-sans text-[10px] tracking-[0.2em] uppercase block mt-1">Castell de Sant Marçal</span>
         </div>
         
         <div className="mx-auto md:mx-0">
@@ -61,7 +61,7 @@ export const Hero: React.FC = () => {
 
         <div className="hidden md:block text-right">
            <span className="font-sans text-[10px] tracking-[0.2em] uppercase block">Est. 2019</span>
-           <span className="font-sans text-[10px] tracking-[0.2em] uppercase block mt-1">Septiembre 24, 2024</span>
+           <span className="font-sans text-[10px] tracking-[0.2em] uppercase block mt-1">Septiembre 24, 2025</span>
         </div>
       </motion.div>
     </section>

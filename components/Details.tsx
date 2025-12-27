@@ -41,8 +41,10 @@ export const Details: React.FC = () => {
           <div className="space-y-8">
             <div className="border-t border-stone-200 pt-8">
               <span className="block font-sans text-[10px] uppercase tracking-[0.2em] text-stone-400 mb-2">Ubicación</span>
-              <p className="font-serif text-2xl text-stone-800">Masía Ribas</p>
-              <p className="font-sans text-sm text-stone-500 mt-1 font-light">Gavà, Barcelona</p>
+              <p className="font-serif text-2xl text-stone-800">Basílica Santa María del Mar</p>
+              <p className="font-sans text-sm text-stone-500 mt-1 font-light">Ceremonia · Barcelona</p>
+              <p className="font-serif text-2xl text-stone-800 mt-6">Castell de Sant Marçal</p>
+              <p className="font-sans text-sm text-stone-500 mt-1 font-light">Celebración · Sant Marçal, Barcelona</p>
               <a href="#" className="inline-block mt-4 text-xs font-sans uppercase tracking-widest border-b border-stone-800 pb-1 hover:text-olive-600 hover:border-olive-600 transition-colors">Ver Mapa</a>
             </div>
 
@@ -50,7 +52,7 @@ export const Details: React.FC = () => {
               <span className="block font-sans text-[10px] uppercase tracking-[0.2em] text-stone-400 mb-2">Dress Code</span>
               <p className="font-serif text-2xl text-stone-800">Formal / Etiqueta</p>
               <p className="font-sans text-sm text-stone-500 mt-1 font-light max-w-xs">
-                Recomendamos traje oscuro para caballeros y vestido largo o midi para damas. La ceremonia es sobre césped.
+                Recomendamos traje oscuro para caballeros y vestido largo o midi para damas. La ceremonia es en la basílica y la celebración en jardines.
               </p>
             </div>
           </div>
@@ -63,22 +65,22 @@ export const Details: React.FC = () => {
              <EventItem 
                time="17:30"
                title="Bienvenida"
-               desc="Llegada de invitados y copa de bienvenida en el patio de los olivos."
+               desc="Llegada de invitados en la Basílica de Santa María del Mar."
              />
              <EventItem 
                time="18:30"
                title="La Ceremonia"
-               desc="Intercambio de anillos y votos en el jardín principal."
+               desc="Intercambio de anillos y votos en la Basílica de Santa María del Mar."
              />
              <EventItem 
                time="19:30"
                title="Aperitivo"
-               desc="Música en directo, gastronomía local y puesta de sol."
+               desc="Música en directo, gastronomía local y puesta de sol en los jardines de Castell de Sant Marçal."
              />
              <EventItem 
                time="21:00"
                title="La Cena"
-               desc="Banquete bajo las luces en el salón de cristal."
+               desc="Banquete bajo las luces en los jardines de Castell de Sant Marçal."
              />
              <EventItem 
                time="23:30"
