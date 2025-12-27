@@ -1,5 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import basilicaImg from '../images/basilica.avif';
+import ringsImg from '../images/rings.jpg';
+import fiestaImg from '../images/fiesta.jpg';
 
 export const Story: React.FC = () => {
   return (
@@ -44,7 +47,7 @@ export const Story: React.FC = () => {
                className="relative z-0"
              >
                 <img 
-                  src="/images/basilica.avif" 
+                  src={basilicaImg} 
                   alt="Basílica de Santa María del Mar" 
                   className="w-full aspect-[16/10] object-cover grayscale-[10%] sepia-[10%] hover:grayscale-0 transition-all duration-1000 ease-in-out"
                 />
@@ -61,7 +64,7 @@ export const Story: React.FC = () => {
                  className="col-span-5 md:col-span-2 relative z-10 border-8 border-[#f5f5f4] bg-white"
                >
                  <img 
-                   src="/images/rings.jpg" 
+                   src={ringsImg} 
                    alt="Anillos de boda" 
                    className="w-full aspect-square object-cover"
                  />
@@ -79,7 +82,7 @@ export const Story: React.FC = () => {
                  className="col-span-5 md:col-span-3 relative z-0"
                >
                   <img 
-                    src="/images/fiesta.jpg" 
+                    src={fiestaImg} 
                     alt="Celebración en los jardines" 
                     className="w-full aspect-[4/3] object-cover grayscale-[10%] sepia-[10%] hover:grayscale-0 transition-all duration-1000 ease-in-out"
                   />
